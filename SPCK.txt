@@ -1,0 +1,24 @@
+SPCK-Khang Thành Như
+link github: https://github.com/mlemmlem-teaser/SPCK
+link api: https://rapidapi.com/freeyourmusic-freeyourmusic-default/api/musicapi13/
+
+
+
+
+const url = 'https://musicapi13.p.rapidapi.com/public/search/introspection';
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '02e21a2917mshb9f7023387f37a0p16f9b8jsnf44ab3717559',
+		'X-RapidAPI-Host': 'musicapi13.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
+
