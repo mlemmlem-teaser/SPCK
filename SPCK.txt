@@ -1,16 +1,16 @@
 SPCK-Khang Thành Như
 link github: https://github.com/mlemmlem-teaser/SPCK
-link api: https://rapidapi.com/freeyourmusic-freeyourmusic-default/api/musicapi13/
+link api: https://rapidapi.com/traviscarr20--bJguAgh4N2/api/shiba-inu-pictures/
 
 
 
 
-const url = 'https://musicapi13.p.rapidapi.com/public/search/introspection';
+const url = 'https://shiba-inu-pictures.p.rapidapi.com/shibes';
 const options = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': '02e21a2917mshb9f7023387f37a0p16f9b8jsnf44ab3717559',
-		'X-RapidAPI-Host': 'musicapi13.p.rapidapi.com'
+		'X-RapidAPI-Host': 'shiba-inu-pictures.p.rapidapi.com'
 	}
 };
 

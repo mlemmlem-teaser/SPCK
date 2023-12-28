@@ -13,7 +13,7 @@ function submit(e) {
       user.email === inputEmail.value &&
       user.password === inputPassword.value
     ) {
-      window.location.href = "../../../../HomePage.html";
+      window.location.href = "../../../HomePage.html";
     } else {
       console.log("error");
     }
