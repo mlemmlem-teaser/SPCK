@@ -1,90 +1,87 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Condensed:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Condensed:wght@300&display=swap");
 
 #container_1 {
-    position: relative;
-    height: 600px;
+  position: relative;
+  height: 70vh;
+  background: url("../Assets/images/download-4.jpg") no-repeat;
 }
-#container_1 h1 {
-    width: 40%;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    left: 30%;
-    top: 120px;
-    color: rgba(0, 0, 0, 0.75);
-}
-#container_1 h2 {
-    width: 40%;
-    text-align: center;
-    font-family: 'Playfair Display', serif;
-    position: relative;
-    left: 30%;
-    top: 120px;
-    color: rgba(0, 0, 0, 0.75);
-}
-#C1_content {
-    position: absolute;
-    top: 0px;
-    z-index: -9999;
-}
-#container_2 {
-    margin-top: 10px;
-    width: 100%;
-}
-#navbar {
-    height: 50px;
-    width: 100%;
-    background-image: linear-gradient(to right, #96c93d, #00b09b);
-    display: flex;
-    position: fixed;
-    top: 0px;
-    z-index: 9999;
-}
-#navbar a {
-    padding:0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(48, 2, 109);
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 800;
-    font-size: 20px;
-    border: rgb(121, 106, 236) 3px;
-}
-#navbar a:hover {
-    background-image: linear-gradient(-120deg,#abf311 0%, #1ed436 100%);
-    border-style: none none outset none;
-}
-#navbar img {
-    height: 50px;
-}
-#Login_Search {
-    display: flex;
-    position: absolute;
-    right: 5%;
-    padding: 0px;
-    height: 100%;
-}
-#Login_Search input {
-    height: 90%;
+
+.content_banner {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: 40%;
+  text-align: center;
 
 }
+.content_banner h1 {
+    font-family: "Playfair Display", serif;
+    color: rgba(0, 0, 0, 0.75);
+}
+.content_banner h2 {
+  font-family: "Playfair Display", serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+#C1_content {
+  position: absolute;
+  top: 0%;
+  z-index: -9999;
+}
+#container_2 {
+  margin-top: 10px;
+  width: 100%;
+}
+#navbar {
+  height: 50px;
+  width: 100%;
+  background-image: linear-gradient(to right, #96c93d, #00b09b);
+  display: flex;
+  position: fixed;
+  top: 0px;
+  z-index: 9999;
+}
+#navbar a {
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(48, 2, 109);
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  border: rgb(121, 106, 236) 3px;
+}
+#navbar a:hover {
+  background-image: linear-gradient(-120deg, #abf311 0%, #1ed436 100%);
+  border-style: none none outset none;
+}
+#navbar img {
+  height: 50px;
+}
+#Login_Search {
+  display: flex;
+  position: absolute;
+  right: 5%;
+  padding: 0px;
+  height: 100%;
+}
+#Login_Search input {
+  height: 90%;
+}
 #C2_content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    position: relative;
-    left: 10%;
-    width: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  left: 10%;
+  width: 80%;
 }
 .Dog_type {
-    width: 40%;
-    margin: 5% 5%;
-    height: 400px;
+  width: 40%;
+  margin: 5% 5%;
 }
 .Dog_type button {
-    width: 40%;
-    margin: 5%;
+  width: 40%;
+  margin: 5%;
 }
