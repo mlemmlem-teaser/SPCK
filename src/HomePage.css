@@ -6,7 +6,7 @@
   top: 50px;
   height: 70vh;
   background: url("../Assets/images/download-4.jpg") no-repeat;
-  
+  background-size: cover;
 }
 
 .content_banner {
@@ -117,6 +117,8 @@
 #footer{
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
+  background-image: linear-gradient(to bottom, white, rgb(120, 231, 120),rgb(104, 104, 241));
+  padding: 10% 1% 1% 1%;
 }
 
 .container{
@@ -132,7 +134,7 @@ ul{
   list-style: none;
 }
 .footer{
-  background-color: #24262b;
+  background-color: #ffffff;
     padding: 70px 0;
 }
 .footer-col{
@@ -141,7 +143,7 @@ ul{
 }
 .footer-col h4{
   font-size: 18px;
-  color: #ffffff;
+  color: #000000;
   text-transform: capitalize;
   margin-bottom: 35px;
   font-weight: 500;
@@ -160,25 +162,33 @@ ul{
 .footer-col ul li:not(:last-child){
   margin-bottom: 10px;
 }
+.footer-col ul li {
+  display: flex;
+}
+.footer-col ul li p {
+  display: none;
+}
+.footer-col:hover ul li .arrow_symbol {
+  display: inline;
+}
 .footer-col ul li a{
   font-size: 16px;
   text-transform: capitalize;
-  color: #ffffff;
   text-decoration: none;
   font-weight: 300;
-  color: #bbbbbb;
+  color: #000000;
   display: block;
   transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-  color: #ffffff;
-  padding-left: 8px;
+  color: #000000;
+  padding-left: 16px;
 }
 .footer-col .social-links a{
   display: inline-block;
   height: 40px;
   width: 40px;
-  background-color: rgba(255,255,255,0.2);
+  background-color: rgba(0, 0, 0);
   margin:0 10px 10px 0;
   text-align: center;
   line-height: 40px;
@@ -202,4 +212,43 @@ ul{
   .footer-col{
     width: 100%;
 }
+}
+#doggo {
+  background: url("../Assets/images/doggo.jpg") no-repeat;
+  background-size: contain;
+  width: 90%;
+  margin-left: 5%;
+  height: 1080px;
+}
+#doggo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#doggo h1 {
+  font-family: "Playfair Display", serif;
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+#doggo h2 {
+  font-family: "Playfair Display", serif;
+  text-shadow: 1px 1px 1px white;
+}
+#scrollBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(0, 201, 43);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+#scrollBtn.show {
+  display: block;
 }
