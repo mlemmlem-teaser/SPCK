@@ -1,6 +1,8 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:ital@1&family=Roboto+Condensed:wght@300&display=swap');
 
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sedgwick+Ave+Display&display=swap');
+
 #container_1 {
   position: relative;
   top: 50px;
@@ -117,7 +119,6 @@
 #footer{
   line-height: 1.5;
   font-family: 'Poppins', sans-serif;
-  background-image: linear-gradient(to bottom, white, rgb(120, 231, 120),rgb(104, 104, 241));
   padding: 10% 1% 1% 1%;
 }
 
@@ -251,4 +252,54 @@ ul{
 
 #scrollBtn.show {
   display: block;
+}
+#content_3 {
+  display: flex;
+  justify-content: space-around;
+}
+#C3_recomment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#C3_recomment .just_for_border {
+  border: #24262b 1px solid;
+  border-radius: 10px 50px 50px 10px;
+  width: 80%;
+  height: 10vh;
+  overflow: hidden;
+}
+#C3_recomment .just_for_border:hover {
+  background-color: rgba(15, 98, 146, 0.5);
+}
+#C3_recomment div a {
+  display: flex;
+}
+#C3_recomment div img {
+  width: 15%;
+  height: max-content;
+}
+#C3_news {
+  width: 20vw;
+}
+.font_RCM {
+  font-family: 'Roboto', sans-serif;
+  margin: 5% 0 1% 15%;
+  font-size: small;
+  width: max-content;
+}
+#C3_infor {
+  width: 40%;
+}
+#C3_infor ul li{
+  margin: 3%;
+}
+#C3_infor ul li a {
+  font-size: larger;
+}
+#C3_infor ul li a:hover {
+  color: #00b09b;
+}
+#background {
+  background-image: linear-gradient(to bottom, white, rgb(120, 231, 120),rgb(104, 104, 241));
 }
