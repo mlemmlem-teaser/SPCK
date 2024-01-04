@@ -261,11 +261,13 @@ ul{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  width: 50%;
+  margin-right: 10%;
 }
 #C3_recomment .just_for_border {
   border: #24262b 1px solid;
   border-radius: 10px 50px 50px 10px;
-  width: 80%;
+  width: 100%;
   height: 10vh;
   overflow: hidden;
 }
@@ -274,19 +276,30 @@ ul{
 }
 #C3_recomment div a {
   display: flex;
+  width: 100%;
 }
 #C3_recomment div img {
-  width: 15%;
-  height: max-content;
+  height: 10vh;
+  width: 30%;
 }
 #C3_news {
   width: 20vw;
 }
-.font_RCM {
+#C3_recomment div a div h1 {
   font-family: 'Roboto', sans-serif;
-  margin: 5% 0 1% 15%;
-  font-size: small;
-  width: max-content;
+  margin: 5% 0 0 5%;
+  font-size: 1em;
+  width: 100%;
+}
+#C3_recomment div a div h2:hover {
+  text-decoration: underline;
+  color: #06109b;
+}
+#C3_recomment div a div h2 {
+  font-family: 'Roboto', sans-serif;
+  margin: 5% 0 0 5%;
+  font-size: 0.8em;
+  width: 100%;
 }
 #C3_infor {
   width: 40%;
