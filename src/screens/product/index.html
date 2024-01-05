@@ -1,18 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="global-styles.css">
-    <link rel="shortcut icon" href="../../../Assets/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="shortcut icon"
+      href="../../../Assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../HomePage.css" />
+  </head>
 
-<body>
+  <body>
+    <div id="navbar">
+      <img
+        src="../../../Assets/images/iterative-mlem-logo-text.png"
+        alt="Logo"
+        style="margin-left: 1em"
+      />
+      <a href="../../HomePage.html">Home</a>
+      <a href="../../../src/screens/product/index.html">Product</a>
+      <a href="../../../src/screens/guide/index.html">Guide</a>
+      <a href="../../../src/screens/aboutUs/index.html">About Us</a>
+      <a href="../../../src/screens/contactUs/index.html">Contact Us</a>
+      <div id="Login_Search">
+        <a
+          href="../../../src/screens/auth/login/login.html"
+          style="padding: 0 8%; font-size: 25px"
+          >Login</a
+        >
+        <i
+          class="fa-solid fa-feather"
+          style="
+            position: absolute;
+            right: 50%;
+            top: 15px;
+            color: rgb(52, 134, 172);
+          "
+        ></i>
+        <input type="search" placeholder="Search....." />
+      </div>
+    </div>
+
+
+
+      <!-- Đoạn mã này tạo ra phần đầu trang với tiêu đề và mô tả -->
+  <div class="header">
+    <h1>Trang web bán hàng trực tuyến</h1>
+    <p>Đây là một ví dụ về trang web bán hàng trực tuyến sử dụng html, css, js</p>
+  </div>
+
+  <!-- Đoạn mã này tạo ra menu với các đường dẫn, thanh tìm kiếm, và nút giỏ hàng -->
+  <div class="menu">
+    <a href="#">Trang chủ</a>
+    <a href="#">Sản phẩm</a>
+    <a href="#">Giới thiệu</a>
+    <a href="#">Liên hệ</a>
+    <div class="search">
+      <input type="text" placeholder="Tìm kiếm...">
+      <button><i class="fa fa-search"></i></button>
+    </div>
+    <button id="cart-btn"><i class="fa fa-shopping-cart"></i></button>
+  </div>
+
+  <!-- Đoạn mã này tạo ra danh mục sản phẩm với các hình ảnh, tên, giá, và nút mua ngay -->
+  <div class="products">
+    <div class="product">
+      <img src="https://static.wixstatic.com/media/84770f_0f7c8d5f9e2a4b6b9a1a4c7e7f9a8f0a~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_0f7c8d5f9e2a4b6b9a1a4c7e7f9a8f0a~mv2.webp" alt="Áo thun">
+      <h3>Áo thun</h3>
+      <p>100.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+    <div class="product">
+      <img src="https://static.wixstatic.com/media/84770f_1f4b9f7a1c0a4c5f8c8a1f0f6a0c7f5c~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_1f4b9f7a1c0a4c5f8c8a1f0f6a0c7f5c~mv2.webp" alt="Quần jean">
+      <h3>Quần jean</h3>
+      <p>200.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+    <div class="product">
+      <img src="https://static.wixstatic.com/media/84770f_5c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_5c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.webp" alt="Giày thể thao">
+      <h3>Giày thể thao</h3>
+      <p>300.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+    <div class="product">
+      <img src="https://static.wixstatic.com/media/84770f_7c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_7c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.webp" alt="Mũ lưỡi trai">
+      <h3>Mũ lưỡi trai</h3>
+      <p>50.000đ</p>
+      <button>Mua ngay</button>
+    </div>
+  </div>
+
+  <!-- Đoạn mã này tạo ra giỏ hàng với các sản phẩm đã chọn, tổng tiền, và nút thanh toán -->
+  <div class="cart">
+    <div class="cart-header">
+      <h2>Giỏ hàng</h2>
+      <button id="close-btn"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="cart-items">
+      <!-- Các sản phẩm trong giỏ hàng sẽ được thêm vào đây bằng javascript -->
+    </div>
+    <div class="cart-total">
+      <p>Tổng tiền: <span id="total-price">0đ</span></p>
+      <button>Thanh toán</button>
+    </div>
+  </div>
+
+  <!-- Đoạn mã này tạo ra phần chân trang với thông tin liên lạc và bản quyền -->
+  <div class="footer">
+    <p>Liên hệ: 0123456789 - Email: example@gmail.com</p>
+    <p>Bản quyền © 2024 Trang web bán hàng trực tuyến. Tất cả các quyền được bảo lưu.</p>
+  </div>
 
     <script src="main.js"></script>
-</body>
-
+  </body>
 </html>

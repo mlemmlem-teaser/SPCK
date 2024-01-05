@@ -1,0 +1,186 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/* Định dạng phần đầu trang */
+.header {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  /* Định dạng menu */
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0099cc; /* Màu xanh biển */
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Định dạng thanh tìm kiếm */
+  .search {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .search input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .search button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Định dạng danh mục sản phẩm */
+  .products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+  }
+  
+  .product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .product button {
+    border: none;
+    outline: none;
+    background-color: #0099cc; /* Màu xanh biển */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Định dạng giỏ hàng */
+  .cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    overflow-y: auto;
+    display: none;
+  }
+  
+  .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-header button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .cart-item p {
+    margin: 0;
+  }
+  
+  .cart-item span {
+    margin-left: auto;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+  }
+  
+  .cart-total button {
+    border: none;
+    outline: none;
+    background-color: #0099cc; /* Màu xanh biển */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  /* Định dạng phần chân trang */
+  .footer {
+    background-color: #0099cc; /* Màu xanh biển */
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Định dạng phần liên hệ */
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .contact h2 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .contact form input, .contact form textarea {
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact form button {
+    border: none;
+    outline: none;
+    background-color: #0099cc; /* Màu xanh biển */
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }

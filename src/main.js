@@ -1,3 +1,4 @@
+
 const arrow_symbol = () => {
   const a = document.getElementsByClassName("arrow_symbol");
   for (let i = 0; i < a.length; i++) {
@@ -31,47 +32,59 @@ function topFunction() {
     setTimeout(topFunction, 10);
   }
 }
-const url = "https://dogbreeddb.p.rapidapi.com/paginated/";
-const options = {
-  method: "GET",
-  headers: {
-    "X-RapidAPI-Key": "02e21a2917mshb9f7023387f37a0p16f9b8jsnf44ab3717559",
-    "X-RapidAPI-Host": "dogbreeddb.p.rapidapi.com",
-  },
-};
-//test api 1
-fetch(url, options)
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error("Lỗi: " + response.status);
-    }
-  })
-  .then((data) => {
-    console.log(data);
-  });
-//test api 2
-const url2 = 'https://dog-breed-classification-api.p.rapidapi.com/dog_breed_classification?url=https%3A%2F%2Fwww.petplan.co.uk%2Fimages%2Fbreed-info%2Ffrench-bulldog%2FVital-Stats_French-Bulldog-Petplan.png';
-const options2 = {
-	method: 'POST',
-	headers: {
-		'X-RapidAPI-Key': '02e21a2917mshb9f7023387f37a0p16f9b8jsnf44ab3717559',
-		'X-RapidAPI-Host': 'dog-breed-classification-api.p.rapidapi.com'
-	}
-};
-fetch(url2, options2)
-  .then((response) => {
-    if (response.ok) {
-      return response.json();
-    } else {
-      throw new Error("Lỗi: " + response.status);
-    }
-  })
-  .then((data) => {
-    const img = data[0];
-    console.log(typeof(img))
-  });
+// const url = "https://dogbreeddb.p.rapidapi.com/paginated/";
+// const options = {
+//   method: "GET",
+//   headers: {
+//     "X-RapidAPI-Key": "02e21a2917mshb9f7023387f37a0p16f9b8jsnf44ab3717559",
+//     "X-RapidAPI-Host": "dogbreeddb.p.rapidapi.com",
+//   },
+// };
+// //test api 1
+// fetch(url, options)
+//   .then((response) => {
+//     if (response.ok) {
+//       return response.json();
+//     } else {
+//       throw new Error("Lỗi: " + response.status);
+//     }
+//   })
+//   .then((data) => {
+//     console.log(data);
+//   });
+// //test api 2
+// const url2 = 'https://dog-breed-classification-api.p.rapidapi.com/dog_breed_classification?url=https%3A%2F%2Fwww.petplan.co.uk%2Fimages%2Fbreed-info%2Ffrench-bulldog%2FVital-Stats_French-Bulldog-Petplan.png';
+// const options2 = {
+// 	method: 'POST',
+// 	headers: {
+// 		'X-RapidAPI-Key': '02e21a2917mshb9f7023387f37a0p16f9b8jsnf44ab3717559',
+// 		'X-RapidAPI-Host': 'dog-breed-classification-api.p.rapidapi.com'
+// 	}
+// };
+// fetch(url2, options2)
+//   .then((response) => {
+//     if (response.ok) {
+//       return response.json();
+//     } else {
+//       throw new Error("Lỗi: " + response.status);
+//     }
+//   })
+//   .then((data) => {
+//     const img = data[0];
+//     console.log(typeof(img))
+//   });
+const link1 = ()=> {
+  window.location="https://www.bachhoaxanh.com/kinh-nghiem-hay/tim-hieu-giong-cho-poodle-nguon-goc-dac-diem-cach-nuoi-bang-gia-1343612"
+}
+const link2 = ()=> {
+  window.location="https://www.bachhoaxanh.com/kinh-nghiem-hay/tim-hieu-ve-giong-cho-corgi-nguon-goc-dac-diem-cach-nuoi-bang-gia-1343752"
+}
+const link3 = ()=> {
+  window.location="https://www.bachhoaxanh.com/kinh-nghiem-hay/tim-hieu-ve-giong-cho-shiba-nguon-goc-dac-diem-cach-nuoi-bang-gia-1343844"
+}
+const link4 = ()=> {
+  window.location="https://www.bachhoaxanh.com/kinh-nghiem-hay/tim-hieu-ve-giong-cho-husky-nguon-goc-dac-diem-cach-nuoi-bang-gia-1343917"
+}
 
 
 

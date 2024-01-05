@@ -12,7 +12,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-image: url("../../../Assets/images/banner.jpg");
+  background-size: cover;
+  background-image: url("../../../Assets/images/1239109-3840x2160-desktop-4k-green-forest-wallpaper-photo.jpg");
 }
 
 .account-box {
@@ -22,7 +23,7 @@ body {
   width: 400px;
   padding: 40px;
   transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.774);
+  background: rgb(0, 0, 0,0.774);
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(255, 255, 255, 0.6);
   border-radius: 10px;
