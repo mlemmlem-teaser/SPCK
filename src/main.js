@@ -69,7 +69,8 @@ fetch(url2, options2)
     }
   })
   .then((data) => {
-    console.log(data);
+    const img = data[0];
+    console.log(typeof(img))
   });
 
 
