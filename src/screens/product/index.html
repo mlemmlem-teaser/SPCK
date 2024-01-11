@@ -4,12 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script
+    src="https://kit.fontawesome.com/7a436d10a3.js"
+    crossorigin="anonymous"
+  ></script>
     <link
       rel="shortcut icon"
       href="../../../Assets/icons/favicon.ico"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../global-styles.css">
     <link rel="stylesheet" href="../../HomePage.css" />
   </head>
 
@@ -44,76 +49,107 @@
       </div>
     </div>
 
+<!-- cái menu -->
 
-
-      <!-- Đoạn mã này tạo ra phần đầu trang với tiêu đề và mô tả -->
-  <div class="header">
-    <h1>Trang web bán hàng trực tuyến</h1>
-    <p>Đây là một ví dụ về trang web bán hàng trực tuyến sử dụng html, css, js</p>
-  </div>
-
-  <!-- Đoạn mã này tạo ra menu với các đường dẫn, thanh tìm kiếm, và nút giỏ hàng -->
-  <div class="menu">
-    <a href="#">Trang chủ</a>
-    <a href="#">Sản phẩm</a>
+  <div class="container__1">
+    <div id="header">
+      <h1 style="font-family: 'Pacifico', cursive;">Mlem Mlem</h1>
+      <p style="font-family: 'Roboto', sans-serif;">Tìm kiếm một thành viên cho tổ ấm của bạn</p>
+    </div>
+    <a href="#">Cửa hàng</a>
     <a href="#">Giới thiệu</a>
+    <a href="#">Hỏi đáp</a>
     <a href="#">Liên hệ</a>
     <div class="search">
+      <button id="cart-btn" title="Giỏ hàng"><i class="fa fa-shopping-cart"></i></button>
       <input type="text" placeholder="Tìm kiếm...">
       <button><i class="fa fa-search"></i></button>
     </div>
-    <button id="cart-btn"><i class="fa fa-shopping-cart"></i></button>
   </div>
 
-  <!-- Đoạn mã này tạo ra danh mục sản phẩm với các hình ảnh, tên, giá, và nút mua ngay -->
-  <div class="products">
-    <div class="product">
-      <img src="https://static.wixstatic.com/media/84770f_0f7c8d5f9e2a4b6b9a1a4c7e7f9a8f0a~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_0f7c8d5f9e2a4b6b9a1a4c7e7f9a8f0a~mv2.webp" alt="Áo thun">
-      <h3>Áo thun</h3>
-      <p>100.000đ</p>
-      <button>Mua ngay</button>
+  <!-- đây là phần product -->
+
+  <div id="product">
+
+<!-- trong này có item -->
+
+    <div class="items">
+      <div class="items-1">
+        <img src="" alt="">
+        <div class="items-info">
+          <h1>Name</h1>
+          <p>|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</p>
+        </div>
+      </div>
+      <div class="items-2">
+        <p class="items-text">||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||</p>
+      </div>
+      <div class="items-3">
+        <button class="buy-btn">Buy</button>
+        <button class="cart-btn" title="Giỏ hàng"><i class="fa fa-shopping-cart"></i></button>
+      </div>
     </div>
-    <div class="product">
-      <img src="https://static.wixstatic.com/media/84770f_1f4b9f7a1c0a4c5f8c8a1f0f6a0c7f5c~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_1f4b9f7a1c0a4c5f8c8a1f0f6a0c7f5c~mv2.webp" alt="Quần jean">
-      <h3>Quần jean</h3>
-      <p>200.000đ</p>
-      <button>Mua ngay</button>
-    </div>
-    <div class="product">
-      <img src="https://static.wixstatic.com/media/84770f_5c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_5c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.webp" alt="Giày thể thao">
-      <h3>Giày thể thao</h3>
-      <p>300.000đ</p>
-      <button>Mua ngay</button>
-    </div>
-    <div class="product">
-      <img src="https://static.wixstatic.com/media/84770f_7c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.png/v1/fill/w_320,h_320,al_c,q_85,usm_0.66_1.00_0.01/84770f_7c0a8f7f9f9a4a9f9c0a8f7f9f9a8f7f~mv2.webp" alt="Mũ lưỡi trai">
-      <h3>Mũ lưỡi trai</h3>
-      <p>50.000đ</p>
-      <button>Mua ngay</button>
-    </div>
+
   </div>
 
-  <!-- Đoạn mã này tạo ra giỏ hàng với các sản phẩm đã chọn, tổng tiền, và nút thanh toán -->
-  <div class="cart">
-    <div class="cart-header">
-      <h2>Giỏ hàng</h2>
-      <button id="close-btn"><i class="fa fa-times"></i></button>
-    </div>
-    <div class="cart-items">
-      <!-- Các sản phẩm trong giỏ hàng sẽ được thêm vào đây bằng javascript -->
-    </div>
-    <div class="cart-total">
-      <p>Tổng tiền: <span id="total-price">0đ</span></p>
-      <button>Thanh toán</button>
-    </div>
-  </div>
+<!-- đây là footer -->
 
-  <!-- Đoạn mã này tạo ra phần chân trang với thông tin liên lạc và bản quyền -->
-  <div class="footer">
-    <p>Liên hệ: 0123456789 - Email: example@gmail.com</p>
-    <p>Bản quyền © 2024 Trang web bán hàng trực tuyến. Tất cả các quyền được bảo lưu.</p>
+  <div id="background">
+  <div id="footer">
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#" class="arrow_symbol">about us</a></li>
+              <li><a href="#" class="arrow_symbol">our services</a></li>
+              <li><a href="#" class="arrow_symbol">privacy policy</a></li>
+              <li>
+                <a href="#" class="arrow_symbol">affiliate program</a>
+              </li>
+            </ul>
+          </div>
+          <!-- <div class="footer-col">
+      <h4>get help</h4>
+      <ul>
+        <li><a href="#" class="arrow_symbol">FAQ</a></li>
+        <li><a href="#" class="arrow_symbol">shipping</a></li>
+        <li><a href="#" class="arrow_symbol">returns</a></li>
+        <li><a href="#" class="arrow_symbol">order status</a></li>
+        <li><a href="#" class="arrow_symbol">payment options</a></li>
+      </ul>
+    </div> -->
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#" class="arrow_symbol">Doggo</a></li>
+              <li><a href="#" class="arrow_symbol">Pet house</a></li>
+              <li>
+                <a href="#" class="arrow_symbol">Pet care equipments</a>
+              </li>
+              <li>
+                <a href="#" class="arrow_symbol">Other pet services</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
-
+</div>
+<button onclick="topFunction()" id="scrollBtn" title="Về đầu trang">
+  ⇑
+</button>
     <script src="main.js"></script>
   </body>
 </html>
