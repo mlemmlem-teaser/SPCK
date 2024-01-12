@@ -68,6 +68,7 @@
   padding: 1%;
   margin-bottom: 5vh;
   word-break: break-word;
+  border-radius: 10px;
 }
 /* 111111111111111111111111111 */
 .items-1 {
@@ -78,7 +79,7 @@
 .items-1 img {
   width: 50%;
   height: 100%;
-
+  margin-right: 3%;
 }
 .items-1 .items-info {
   padding: 2.5%;

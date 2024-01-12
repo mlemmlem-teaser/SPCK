@@ -50,7 +50,8 @@ const api=async ()=> {
                     const cart_icon = document.createElement("i"); cart_icon.classList.add("fa"); cart_icon.classList.add("fa-shopping-cart");
         //  /\ /\ /\ /\ /\ /\ /\ /\ /\ /\
         // gắn giá trị cho đống item
-        img.src="../../../Assets/images/ảnh cheems/cheems.jpg";
+        //"../../../Assets/images/ảnh cheems/cheems.jpg"
+        img.src=imgThumb;
         items_info_h1.innerText=breedName;
         items_info_h1.style="font-size: 20px;margin-bottom: 5%;";
         items_info_p1.innerText="BreedType: "+breedType;
@@ -59,6 +60,7 @@ const api=async ()=> {
         items_info_p2.style.fontSize="12px";
         items_2_p.innerText=breedDescription;
         buy_btn.innerText="Buy";
+        cart_btn.title="Thêm vào giỏ hàng";
         // appendChild 1 đống
         items_infor.appendChild(items_info_h1);
         items_infor.appendChild(items_info_p1);
