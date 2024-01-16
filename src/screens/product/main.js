@@ -1,4 +1,5 @@
-const url = 'https://dogbreeddb.p.rapidapi.com/paginated/';
+for (let i = 1; i < 40; i++) {
+  let url = `https://dogbreeddb.p.rapidapi.com/paginated/?page=${i}`;
 const options = {
 	method: 'GET',
 	headers: {
@@ -6,7 +7,7 @@ const options = {
 		'X-RapidAPI-Host': 'dogbreeddb.p.rapidapi.com'
 	}
 };
-const product = document.getElementById("product");
+const page = document.getElementsByClassName("page");
 const api=async ()=> {
   try {
     const response = await fetch(url, options);
@@ -59,7 +60,18 @@ const api=async ()=> {
         items_info_p1.style.fontSize="12px";
         items_info_p2.style.fontSize="12px";
         items_2_p.innerText=breedDescription;
-        buy_btn.innerText="Buy";
+        buy_btn.innerText="More information";
+        buy_btn.addEventListener("click",()=>{
+        const all_items= document.getElementsByClassName("items");
+          for (let i = 0; i < all_items.length; i++) {
+            all_items[i].style="  width: 25vw;height: 70vh;box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);padding: 1%;margin-bottom: 5vh;word-break: break-word;border-radius: 10px;position:inherit;";
+          }
+          items.style.width="100vw";
+          items.style.height="90vh";
+          items.style.position="absolute";
+          items.style.backgroundColor="white";
+          items.style.zIndex="9999";
+        });
         cart_btn.title="Thêm vào giỏ hàng";
         // appendChild 1 đống
         items_infor.appendChild(items_info_h1);
@@ -74,10 +86,13 @@ const api=async ()=> {
         items.appendChild(items1);
         items.appendChild(items2);
         items.appendChild(items3);
-        product.appendChild(items);
+        page[0].appendChild(items);
+        //cho nút more info
+
     });
   } catch (error) {
     console.error(error);
   }
 }
 api()
+}
