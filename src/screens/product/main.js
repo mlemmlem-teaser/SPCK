@@ -14,8 +14,8 @@ const api=async ()=> {
     const response = await fetch(url, options);
     const data = await response.json();
     console.log(data);
-    console.log(data.results.sort());
-    const dogbreeddb = data.results.sort();
+    console.log(data.results);
+    const dogbreeddb = data.results;
             // cái thanh page
             const page_a = document.createElement("a");
             page_a.classList.add("page_a");
@@ -25,7 +25,7 @@ const api=async ()=> {
             const lc= document.createElement("div"); lc.id=`lc${i}`;
             lc.classList.add("lc");
             lc.innerText=`Page ${i}`;
-    dogbreeddb.forEach((e) => {
+    dogbreeddb.sort().forEach((e) => {
         // 1 đống infor
       const breedName = e.breedName;
       const breedType = e.breedType;
