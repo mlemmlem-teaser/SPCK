@@ -25,7 +25,7 @@ const api=async ()=> {
             const lc= document.createElement("div"); lc.id=`lc${i}`;
             lc.classList.add("lc");
             lc.innerText=`Page ${i}`;
-    dogbreeddb.sort().forEach((e) => {
+    dogbreeddb.forEach((e) => {
         // 1 đống infor
       const breedName = e.breedName;
       const breedType = e.breedType;
