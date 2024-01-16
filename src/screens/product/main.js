@@ -1,4 +1,4 @@
-for (let i = 1; i < 40; i++) {
+for (let i = 1; i <= 40; i++) {
   let url = `https://dogbreeddb.p.rapidapi.com/paginated/?page=${i}`;
 const options = {
 	method: 'GET',
@@ -8,13 +8,23 @@ const options = {
 	}
 };
 const page = document.getElementsByClassName("page");
+const page_bar = document.getElementsByClassName("page_bar");
 const api=async ()=> {
   try {
     const response = await fetch(url, options);
     const data = await response.json();
     console.log(data);
-    console.log(data.results);
-    const dogbreeddb = data.results;
+    console.log(data.results.sort());
+    const dogbreeddb = data.results.sort();
+            // cái thanh page
+            const page_a = document.createElement("a");
+            page_a.classList.add("page_a");
+            page_a.innerText=i;
+            page_a.href=`#lc${i}`;
+            page_bar[0].appendChild(page_a);
+            const lc= document.createElement("div"); lc.id=`lc${i}`;
+            lc.classList.add("lc");
+            lc.innerText=`Page ${i}`;
     dogbreeddb.forEach((e) => {
         // 1 đống infor
       const breedName = e.breedName;
@@ -32,6 +42,7 @@ const api=async ()=> {
         //cái icon
         // 1 đống cái để làm item
       const items = document.createElement("div"); items.classList.add("items");
+
             //1111111111
           const items1 = document.createElement("div"); items1.classList.add("items-1");
             const img=document.createElement("img");
@@ -49,7 +60,7 @@ const api=async ()=> {
                 const buy_btn = document.createElement("button"); buy_btn.classList.add("buy-btn");
                 const cart_btn = document.createElement("button");cart_btn.classList.add("cart-btn");
                     const cart_icon = document.createElement("i"); cart_icon.classList.add("fa"); cart_icon.classList.add("fa-shopping-cart");
-        //  /\ /\ /\ /\ /\ /\ /\ /\ /\ /\
+
         // gắn giá trị cho đống item
         //"../../../Assets/images/ảnh cheems/cheems.jpg"
         img.src=imgThumb;
@@ -90,6 +101,7 @@ const api=async ()=> {
         //cho nút more info
 
     });
+    page[0].appendChild(lc);
   } catch (error) {
     console.error(error);
   }

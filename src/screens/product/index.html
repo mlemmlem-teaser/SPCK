@@ -67,22 +67,23 @@
     </div>
   </div>
   <div class="page_bar">
-    <button>a</button>
-    <button>b</button>
-    <button>c</button>
-    <button>d</button>
-    <button>e</button>
-    <button>f</button>
-    <button>g</button>
-    <button>h</button>
+    <button class="page_a">0</button>
+    <!-- <button class="page_a">1</button>
+    <button class="page_a">2</button>
+    <button class="page_a">3</button>
+    <button class="page_a">4</button>
+    <button class="page_a">5</button>
+    <button class="page_a">6</button>
+    <button class="page_a">7</button>
+    <button class="page_a">8</button>
     <div>...</div>
-    <button>40</button>
+    <button class="page_a">40</button> -->
   </div>
 
   <!-- đây là phần product -->
 <div id="all_page">
   <div class="page">
-
+    <div id="lc0" class="lc">Page 0</div>
 <!-- trong này có item -->
 
     <!-- <div class="items">
@@ -162,5 +163,26 @@
   ⇑
 </button>
     <script src="main.js"></script>
+    <script>
+      window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollBtn").style.display = "block";
+  } else {
+    document.getElementById("scrollBtn").style.display = "none";
+  }
+}
+
+function topFunction() {
+  var position = document.body.scrollTop || document.documentElement.scrollTop;
+  if (position > 0) {
+    window.scrollBy(0, -2000);
+    setTimeout(topFunction, 10);
+  }
+}
+    </script>
   </body>
 </html>
