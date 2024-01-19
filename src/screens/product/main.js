@@ -72,16 +72,14 @@ const api=async ()=> {
         items_info_p2.style.fontSize="12px";
         items_2_p.innerText=breedDescription;
         buy_btn.innerText="More information";
+        // sự kiện cho đống items
         buy_btn.addEventListener("click",()=>{
         const all_items= document.getElementsByClassName("items");
           for (let i = 0; i < all_items.length; i++) {
             all_items[i].style="  width: 25vw;height: 70vh;box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);padding: 1%;margin-bottom: 5vh;word-break: break-word;border-radius: 10px;position:inherit;";
           }
-          items.style.width="100vw";
-          items.style.height="90vh";
-          items.style.position="absolute";
-          items.style.backgroundColor="white";
-          items.style.zIndex="9999";
+          items.style="  z-index: 9999;background-color: white;width: 100vw;height: 90vh;box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);padding: 1%;margin-bottom: 5vh;word-break: break-word;border-radius: 10px;margin: 1%;display: flex;flex-direction: column;";
+          items1.style="height: calc(1/2.5 * 100%);display:flex;width:60%;padding-left";
         });
         cart_btn.title="Thêm vào giỏ hàng";
         // appendChild 1 đống

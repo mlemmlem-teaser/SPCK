@@ -71,6 +71,9 @@
   word-break: break-word;
   border-radius: 10px;
   margin: 1%;
+  display: flex;
+  flex-direction: column;
+  
 }
 /* 111111111111111111111111111 */
 .items-1 {
@@ -118,6 +121,9 @@
   padding: 2%;
   background-color: rgb(0, 0, 255,0.75);
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .buy-btn:hover {
   text-shadow: 1px 1px black;
@@ -127,6 +133,9 @@
 .cart-btn {
   width: 20%;
   padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .cart-btn:hover {
   background-color: rgb(0, 0, 0,0.2);
