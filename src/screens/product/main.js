@@ -133,7 +133,8 @@ function stop() {
             items.appendChild(items3);
             page[0].appendChild(items);
             //cho nút more info
-    
+            const loading_percent =Math.round((i/40)*100)/1;
+            document.getElementById("loading").innerText=`Vui lòng chờ trong giây lát \n Trang đang được load: ${loading_percent} %`;
         });
         page[0].appendChild(lc);
         
@@ -147,6 +148,7 @@ function stop() {
     if (i==40) {
       document.getElementsByClassName("page_bar")[0].style.display="flex";
       document.getElementById("all_page").style.display="inherit";
+      document.getElementById("loading").style.display="none";
       clearInterval(runcode);
     } else {
       document.getElementById("loading").style.display="flex";
@@ -154,4 +156,4 @@ function stop() {
     i++;
   }
 };
-const runcode = setInterval(stop,500);
+const runcode = setInterval(stop,350);
