@@ -23,12 +23,12 @@ function stop() {
                 // cái thanh page
                 const page_a = document.createElement("a");
                 page_a.classList.add("page_a");
-                page_a.innerText=i;
-                page_a.href=`#lc${i}`;
+                page_a.innerText=i-1;
+                page_a.href=`#lc${i-1}`;
                 page_bar[0].appendChild(page_a);
-                const lc= document.createElement("div"); lc.id=`lc${i}`;
+                const lc= document.createElement("div"); lc.id=`lc${i-1}`;
                 lc.classList.add("lc");
-                lc.innerText=`Page ${i}`;
+                lc.innerText=`Page ${i-1}`;
         dogbreeddb.forEach((e) => {
             // 1 đống infor
           const breedName = e.breedName;
@@ -133,8 +133,11 @@ function stop() {
             items.appendChild(items3);
             page[0].appendChild(items);
             //cho nút more info
-            const loading_percent =Math.round((i/40)*100)/1;
-            document.getElementById("loading").innerText=`Vui lòng chờ trong giây lát \n Trang đang được load: ${loading_percent} %`;
+            const loading_percent =Math.round((i/40)*100)/1 +"%";
+            const loader = document.getElementById("loader");
+            const loading = document.getElementById("loading");
+            loading.innerText=loading_percent;
+            loading.appendChild(loader);
         });
         page[0].appendChild(lc);
         

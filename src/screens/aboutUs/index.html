@@ -1,18 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../global-styles.css">
-    <link rel="shortcut icon" href="../../../Assets/icons/favicon.ico" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/7a436d10a3.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../../global-styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../Assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../HomePage.css" />
     <link rel="stylesheet" href="style.css">
-</head>
-
+  </head>
 <body>
+    <div id="navbar">
+        <img
+          src="../../../Assets/images/iterative-mlem-logo-text.png"
+          alt="Logo"
+          style="margin-left: 1em"
+        />
+        <a href="../../HomePage.html">Home</a>
+        <a href="../../../src/screens/product/index.html">Product</a>
+        <a href="https://www.wikihow.pet/Take-Care-of-a-Dog">Guide</a>
+        <a href="index.html">About Us</a>
+        <a href="../../../src/screens/contactUs/index.html">Contact Us</a>
+        <div id="Login_Search">
+          <a href="../../../src/screens/auth/login/login.html" style="padding: 0 8%; font-size: 25px"><i class="fa-solid fa-right-to-bracket"></i><div style="width: 10px;"></div>Login</a>
+          <input type="search" placeholder="Search....." style="width: 100%;"><i class="fa-solid fa-feather" style="color: rgb(52, 134, 172);position: absolute; left: 0px;left: 55%;top: 30%;" ></i></input>
+        </div>
+      </div>
 
-    <script src="main.js"></script>
+<!-- container ở đây -->
+    <div class="container">
+        <div class="content">
+            <div class="image">
+                <img src="../../../Assets/images/cửa sổ sândsj.jpg" alt="Đội ngũ của chúng tôi">
+            </div>
+            <div class="text">
+                <h2>Về chúng tôi</h2>
+                <p>Chúng tôi là một nhóm những người đam mê công nghệ, sáng tạo và nhiệt huyết. Chúng tôi luôn mong muốn mang đến cho khách hàng những sản phẩm và dịch vụ tốt nhất, đáp ứng nhu cầu và mong đợi của họ. Chúng tôi có kinh nghiệm trong nhiều lĩnh vực như thiết kế web, phát triển phần mềm, trí tuệ nhân tạo, kinh doanh và tiếp thị. Chúng tôi luôn học hỏi, nâng cao kỹ năng và cập nhật xu hướng mới nhất trong ngành.</p>
+            </div>
+        </div>
+    </div>
+
+
+        <!-- đây là footer -->
+        <div id="background">
+            <div id="footer">
+              <footer class="footer">
+                <div class="container">
+                  <div class="row">
+                    <div class="footer-col">
+                      <h4>company</h4>
+                      <ul>
+                        <li><a href="#" class="arrow_symbol">about us</a></li>
+                        <li><a href="#" class="arrow_symbol">our services</a></li>
+                        <li><a href="#" class="arrow_symbol">privacy policy</a></li>
+                        <li>
+                          <a href="#" class="arrow_symbol">affiliate program</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#" class="arrow_symbol">FAQ</a></li>
+              <li><a href="#" class="arrow_symbol">shipping</a></li>
+              <li><a href="#" class="arrow_symbol">returns</a></li>
+              <li><a href="#" class="arrow_symbol">order status</a></li>
+              <li><a href="#" class="arrow_symbol">payment options</a></li>
+            </ul>
+          </div> -->
+                    <div class="footer-col">
+                      <h4>online shop</h4>
+                      <ul>
+                        <li><a href="#" class="arrow_symbol">Doggo</a></li>
+                        <li><a href="#" class="arrow_symbol">Pet house</a></li>
+                        <li>
+                          <a href="#" class="arrow_symbol">Pet care equipments</a>
+                        </li>
+                        <li>
+                          <a href="#" class="arrow_symbol">Other pet services</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="footer-col">
+                      <h4>follow us</h4>
+                      <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+          </div>
+          <button onclick="topFunction()" id="scrollBtn" title="Về đầu trang">
+            ⇑
+          </button>
+          <script src="main.js"></script>
+          <script src="../../main.js"></script>
+          <script>
+            window.onscroll = function () {
+              scrollFunction();
+            };
+      
+            function scrollFunction() {
+              if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+              ) {
+                document.getElementById("scrollBtn").style.display = "block";
+              } else {
+                document.getElementById("scrollBtn").style.display = "none";
+              }
+            }
+      
+            function topFunction() {
+              var position =
+                document.body.scrollTop || document.documentElement.scrollTop;
+              if (position > 0) {
+                window.scrollBy(0, -2000);
+                setTimeout(topFunction, 10);
+              }
+            }
+          </script>
 </body>
-
 </html>

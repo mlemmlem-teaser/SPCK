@@ -201,6 +201,33 @@
   text-align: center;
   padding: 10%;
   width: 100%;
-  font-size: 80px;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+#loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
 
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(1080deg); }
 }
