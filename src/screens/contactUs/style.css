@@ -9,6 +9,7 @@
     font-family: Arial, sans-serif;
     margin-top: 50px;
     background-color: white;
+    padding: 0 10% 0 10%;
 }
 
 .header {
@@ -33,7 +34,7 @@
 .content .image {
     width: 100%;
     margin-bottom: 5vh;
-    box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0,0.35);
 }
 
 .content .image img {
@@ -49,13 +50,11 @@
 }
 
 .content .text h2 {
-    color: #333;
     font-size: 28px;
     margin-bottom: 20px;
 }
 
 .content .text p {
-    color: #666;
     font-size: 18px;
     line-height: 1.5;
 }
@@ -65,6 +64,7 @@
     box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);
     padding: 2%;
     border-radius: 1% 0px 1% 1%;
+    margin: 3% 0px 3% 3%;
 }
 #mlemmlem form {
     width: 100%;
@@ -90,5 +90,19 @@
 #contact_form {
     background: #1089ff;
     padding: 5%;
-    width: 40%;
+    width: 70%;
+    border-radius: 10px;
+}
+.title_form {
+    font-weight: 600;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    margin-top: 10%;
+}
+.title_form p {
+    color: #cfe7ff;
+    font-weight: 300;
+    margin-left: 5%;
 }

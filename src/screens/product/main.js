@@ -106,6 +106,8 @@ function stop() {
             buy_btn.addEventListener("click",()=>{
             const all_items= document.getElementsByClassName("items");
             const all_more_infor = document.getElementsByClassName("more-infor");
+              
+            if (buy_btn.innerText=="More information") {
               for (let i = 0; i < all_items.length; i++) {
                 all_items[i].style="  width: 35vw;height: 70vh;box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);padding: 1%;margin-bottom: 5vh;word-break: break-word;border-radius: 10px;position:inherit;";
                 all_more_infor[i].style.display="none";
@@ -115,6 +117,17 @@ function stop() {
               items1.style="height: 55%;width:100%;padding-left;display:flex;justify-content: space-around;";
               more_infor.style.display="inherit";
               items_info_h1.style="font-size: 30px;margin-bottom: 5%;text-align:center;";
+              buy_btn.innerText="Minimize";
+            } else {
+              buy_btn.innerText="More information";
+              items.style="width: 35vw;height: 70vh;box-shadow: 3px 3px 30px 5px rgb(0, 0, 0,0.35);padding: 1%;margin-bottom: 5vh;word-break: break-word;border-radius: 10px;margin: 1%;display: flex;flex-direction: column;";
+              items1.style="  display: flex;height: calc(1/2.5 * 100%);";
+              more_infor.style.display="none";
+              items_info_h1.style="";
+            }
+
+
+
             });
             cart_btn.title="Thêm vào giỏ hàng";
             // appendChild 1 đống
@@ -159,4 +172,4 @@ function stop() {
     i++;
   }
 };
-const runcode = setInterval(stop,350);
+const runcode = setInterval(stop,500);
