@@ -15,8 +15,10 @@ function stop() {
     const api=async ()=> {
       try {
         const response = await fetch(url, options);
+        console.log(response);
         const data = await response.json();
         const dogbreeddb = data.results;
+        console.log(dogbreeddb);
         let all = 0;
         all = all + dogbreeddb;
         if (all.length>=40) {
