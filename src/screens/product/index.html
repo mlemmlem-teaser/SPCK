@@ -197,9 +197,9 @@
       function topFunction() {
         var position =
           document.body.scrollTop || document.documentElement.scrollTop;
-        if (position > 0) {
+        if (position > 500) {
           window.scrollBy(0, -10000);
-          setTimeout(topFunction, 10);
+          setTimeout(topFunction, 20);
         }
       }
     </script>

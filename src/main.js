@@ -13,10 +13,6 @@ const arrow_symbol = () => {
   }
 };
 arrow_symbol();
-window.onscroll = function () {
-  scrollFunction();
-};
-
 
 // const url = "https://dogbreeddb.p.rapidapi.com/paginated/";
 // const options = {
